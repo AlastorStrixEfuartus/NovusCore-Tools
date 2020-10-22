@@ -358,7 +358,8 @@ struct M2CompBone
         u32 cylindricialBillboardLockX : 1;
         u32 cylindricialBillboardLockY : 1;
         u32 cylindricialBillboardLockZ : 1;
-        u32 : 2;
+        u32 : 1; // transformed_0x80  --- according to 010 m2 template by relaxok repo
+        u32 : 1; // UNK_0x100       
         u32 transformed : 1;
         u32 kinematicBone : 1; // MOP+ Allow physics to influence this bone
         u32 : 1;
