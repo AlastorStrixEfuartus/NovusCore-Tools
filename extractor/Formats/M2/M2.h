@@ -147,9 +147,9 @@ struct M2Material
         u16 unLit : 1;
         u16 unFogged : 1;
         u16 disableBackfaceCulling : 1;
-        u16 depthTest;
-        u16 depthWrite;
-        u16 : 5;
+        u16 depthTest; // Billboard
+        u16 depthWrite; // Not_ZBuffered
+        u16 : 5; // WOD+
     } flags;
     u16 blendingMode; // Check https://wowdev.wiki/M2/Rendering#M2BLEND
 };
