@@ -121,7 +121,7 @@ struct M2Texture
     u32 type = 0; // Check https://wowdev.wiki/M2#Textures
     struct M2TextureFlags
     {
-        u32 wrapX : 1;
+        u32 wrapX : 1; // Both flags can be enabled at the same time making it 03 00 00 00 in file for XY texture wrapping
         u32 wrapY : 1;
     } flags;
 
